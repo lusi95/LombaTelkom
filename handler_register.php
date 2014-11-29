@@ -20,7 +20,7 @@
 	if($conn->query($sql) === TRUE) {
 		echo "Berhasi Insert";
 	}else {
-		echo "Errror : ".$sql."<br><br>".$conn->error;
+		echo "Error : ".$sql."<br><br>".$conn->error;
 	}
 
 	$conn->close();
