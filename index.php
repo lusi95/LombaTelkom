@@ -2,8 +2,8 @@
 	session_start();
 
 	if(!isset($_SESSION['id'])){
-		include "indeks.html";
+		include "main_homeview.php";
 	}else {
-		include "post.html";
+		include "post.php";
 	}
 ?>

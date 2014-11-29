@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50620
 File Encoding         : 65001
 
-Date: 2014-11-29 15:55:34
+Date: 2014-11-29 20:51:11
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -23,7 +23,7 @@ CREATE TABLE `events` (
   `id_events` varchar(255) NOT NULL,
   `name` varchar(255) DEFAULT NULL,
   `description` varchar(255) DEFAULT NULL,
-  `date` varchar(255) NOT NULL,
+  `date` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `id_org` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id_events`),
   KEY `fk_events` (`id_org`),
@@ -44,7 +44,7 @@ CREATE TABLE `files` (
   `deskripsi_file` varchar(255) DEFAULT NULL,
   `jenis_file` varchar(255) NOT NULL,
   `id_user` varchar(255) NOT NULL,
-  `date` date NOT NULL,
+  `date` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `rating` double(3,3) DEFAULT NULL,
   `path` varchar(255) NOT NULL,
   PRIMARY KEY (`id_file`),
@@ -119,4 +119,5 @@ CREATE TABLE `users` (
 -- ----------------------------
 -- Records of users
 -- ----------------------------
+INSERT INTO `users` VALUES ('', null, null, '', '', '', null, null, null, null, '');
 INSERT INTO `users` VALUES ('5d92ef3345893922cca0a96b785a1f9e599f5c52181b4eab33f36dca40c1248c', 'febrianda.rifqi72@gmail.com', 'bandung', 'febrianda.rifqi72@gmail.com', 'nanda', '05cb92ff06c80e13786c311178fd349bb01c25ce7d330d038a5de5e61b768eb3', 'bandung', 'Jawa Barat', '0123456789', null, 'dir/5d92ef3345893922cca0a96b785a1f9e599f5c52181b4eab33f36dca40c1248c');
