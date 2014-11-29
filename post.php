@@ -89,7 +89,6 @@
 						Wawww. Lucu lah.! (Posted by: Stella Patricia, 29 Nov 2014 10:02)
 						<img src="images/post/StellaPat000001.jpg" width="800px"><br>
 						<img src="images/up.png" width="20px">10
-						<img src="images/down.png" width="20px">0
 						<img src="images/comment.png" width="20px">4
 					</div>
 				</div>

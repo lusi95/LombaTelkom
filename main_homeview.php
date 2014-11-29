@@ -16,6 +16,8 @@
 		<!--<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">!-->
 		<script src="jquery-1.9.1.js"></script>
 		<script src="jquery-ui.js"></script>
+
+		<script src="jquery-ui.js"></script>
 		
 		<link rel="stylesheet" type="text/css" href="css/css.css">
 		<script type="text/javascript" src="js.js"></script>
@@ -75,7 +77,7 @@
 		</div>
 		
 		<div class="marketing-section-signup">
-				<form accept-charset="UTF-8" action="/join" class="form-signup-home js-form-signup-home" method="post">
+				<form accept-charset="UTF-8" action="handler_register.php" onsubmit = "checkRegist()" class="form-signup-home js-form-signup-home" method="post" onsubmit="">
 				<div style="margin:0;padding:0;display:inline">
 					<input name="utf8" type="hidden" value="✓">
 					<input name="authenticity_token" type="hidden" value="nl3w6bsypsBwNbX+vXvYzSPvZNkKaGP2Pv6JxjAlgt+3F0HpOEi3tb7yn9ljZ/uxrJsZ1ksxpW5MXc2yL+gu3w==">
@@ -83,25 +85,25 @@
 			
 				<dl class="form">
 					<dd>
-						<input type="text" name="user[login]" class="textfield" placeholder="Username" data-autocheck-url="/signup_check/username" autofocus="">
+						<input type="text" name="username" class="textfield" placeholder="Username" data-autocheck-url="/signup_check/username" autofocus="">
 					</dd>
 				</dl>
 				
 				<dl class="form">
 					<dd>
-						<input type="text" name="user[email]" class="textfield js-email-notice-trigger" placeholder="Your email" data-autocheck-url="/signup_check/email">
+						<input type="text" name="email" class="textfield js-email-notice-trigger" placeholder="Your email" data-autocheck-url="/signup_check/email">
 					</dd>
 				</dl>
 				
 				<dl class="form">
 					<dd>
-						<input type="password" name="user[password]" class="textfield" placeholder="Password" data-autocheck-url="/signup_check/password">
+						<input type="password" name="password" class="textfield" placeholder="Password" data-autocheck-url="/signup_check/password">
 					</dd>
 				</dl>
 				
 				<dl class="form">
 					<dd>
-						<input type="password" name="user[re-password]" class="textfield" placeholder="Re-Enter Password" data-autocheck-url="/signup_check/re-password">
+						<input type="password" name="password2" class="textfield" placeholder="Re-Enter Password" data-autocheck-url="/signup_check/re-password">
 					</dd>
 				</dl>
 				
