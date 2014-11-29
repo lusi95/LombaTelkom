@@ -266,7 +266,7 @@ body {
 	color: black;
 }
 
-#logo{
+#logo1{
 	position: relative;
 	height: 5%;
 	width: 5%;
@@ -355,3 +355,102 @@ body {
 	position: relative;
 }
 
+#content-com{
+	width:1000px;
+	margin:-50px 0 20px 0;
+	background-color:black;
+	display:none;
+	box-shadow : 0 0 20px 10px rgba(0,255,255,0.8);
+	color : white;
+	font-size : 23px;
+}
+
+#tabs{
+	background-color: black;
+	width:100%;
+    display:inline-block;
+}
+
+#tab-links {
+	margin-top: 20px;
+	padding-left: 40%;
+	width: 100%;
+}
+
+#tab-links:after {
+        display:block;
+        clear:both;
+        content:'';
+}
+
+#tab-links li {
+        margin:0px 20px;
+        float:left;
+        list-style:none;
+}
+
+#tab-links a {
+	padding:9px 15px;
+	display:inline-block;
+	border-radius:3px 3px 0px 0px;
+	width: 100px;
+	text-align: center;
+	background:#7FB5DA;
+	font-size:16px;
+	font-weight:600;
+	color:#4c4c4c;
+	transition:all linear 0.15s;
+}
+ 
+#tab-links a:hover {
+	background:#a7cce5;
+	text-decoration:none;
+}
+ 
+li.active a, li.active a:hover {
+	background:#fff;
+	color:#4c4c4c;
+}
+ 
+/*----- Content of Tabs -----*/
+.tab-content {
+        padding:15px;
+        border-radius:3px;
+        box-shadow:-1px 1px 1px rgba(0,0,0,0.15);
+        background:#fff;
+    }
+ 
+.tab {
+	display:none;
+}
+ 
+.tab.active {
+	display:block;
+}
+
+#profpict {
+	width: 150px;
+	height: 230px;
+	position: absolute;
+	margin: 10px 10px 100px 100px;
+	overflow: hidden;
+}
+#timeline {
+	margin-top:50px;
+}
+#user #userlist li{
+	display: inline;
+	padding:5%;
+}
+#photouser ul li {
+	text-align: center;
+}
+
+#user ul {
+	border: 10px #7a8dcb solid;
+	padding: 50px;
+	background: white;
+}
+#profileall {
+padding-left: -20px;
+}
