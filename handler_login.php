@@ -35,6 +35,5 @@
 		}
 	}
 
-	print_r($_SESSION);
 	$conn->close();
 ?>
