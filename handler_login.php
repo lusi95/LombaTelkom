@@ -20,19 +20,21 @@
 			$finalResult = True;
 			$_SESSION['id'] = $row[0];
 			$_SESSION['username'] = $row[4];
-			$_SESSION['email'] = $row[3];
+			$_SESSION['path'] = $row[10];
 			
 			if(isset($_POST['remember'])){
 				setcookie('id',time()+3600);
 				setcookie('username', $row[4]. time()+3600);
-				setcookie('email', $row[3]. time()+3600);
+				setcookie('path', $row[10]. time()+3600);
 			}
 
 			echo "Login Sukses";	
 		}else {
+
 			echo "Login Gagal : ".$sql."<br><br>".$conn->error;	
 		}
 	}
 
+	print_r($_SESSION);
 	$conn->close();
 ?>
