@@ -2,8 +2,8 @@
 	session_start();
 
 	if(!isset($_SESSION['id'])){
-		include "main_interface.php";
+		include "indeks.html";
 	}else {
-		// include "";
+		include "post.html";
 	}
 ?>

@@ -27,7 +27,7 @@ define('SERVER_URL','http://sandbox.appprime.net'); define('TELKOMID_OAUTH2_AUTH
 	
 	function getAccessToken(){
             if (!isset($this->access_token)) {
-                $param = "code=" . $this->code . "&amp;redirect_uri=" . $this->redirect_uri . "&amp;client_id=" . $this->client_id . "&amp;client_secret=" . $this->client_secret . "&amp;grant_type=authorization_code";
+                $param = "code=" . $this->code . ", redirect_uri=" . $this->redirect_uri . ", client_id=" . $this->client_id . ", client_secret=" . $this->client_secret . ", grant_type=authorization_code";
                 $curl = curl_init(TELKOMID_OAUTH2_TOKEN_URL);
                 curl_setopt($curl, CURLOPT_POST, true);
                 curl_setopt($curl, CURLOPT_POSTFIELDS, $param);

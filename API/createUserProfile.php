@@ -22,6 +22,7 @@ try
 {
         //  STEP 1:  If we do not have an OAuth token yet, go get one
         $getAuthTokenParams = null;
+        
         // get a request token
         echo 'fetch request token..';
         $tokenResultParams = OAuthRequester::requestRequestToken(CONSUMER_KEY, 0, $getAuthTokenParams);
