@@ -3,6 +3,8 @@
 
 	session_start();
 
+	$email = $password = "";
+
 	if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		$email = $_POST["username"];
 		$password = hash("sha256", $_POST["password"]);
@@ -31,6 +33,6 @@
 			echo "Login Gagal : ".$sql."<br><br>".$conn->error;	
 		}
 	}
-	
+
 	$conn->close();
 ?>
